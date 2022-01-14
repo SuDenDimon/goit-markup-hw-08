@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav,
+.list-nav,
+.contacts,
+.header 
+.container {
+//   display: flex;
+//   justify-content: space-between;
+
+  @media screen and (min-width: $mobile){
+      width: $mobile;
+      height: 60px;
+  }
+    .navigation {
+        padding-top: 16px;
+    }
+  @media screen and (min-width: $tablet){
+      width: $tablet;
+  }
+   @media screen and (min-width: $desktop){
+      width: $desktop;
+  }
+}
+    .nav-mobile {
+        display: none;
+    }
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;   
+}
