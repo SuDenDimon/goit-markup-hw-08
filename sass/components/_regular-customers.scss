@@ -1,0 +1,37 @@
+.list-customers {
+  @extend %position-center;
+  &__item {
+  width: 170px;
+  height: 92px;
+  fill: $light-gray;
+  border: 1px solid $light-gray;
+  border-radius: 4px;
+  margin-right: 30px;
+  }
+  &__item:hover,
+  &__item:focus { 
+  border: 1px solid $light-blu;
+  }
+  &__item:last-child {
+  margin-right: 0;
+  }
+}
+.item__link {
+  @extend %position-center;
+  width: 170px;
+  height: 92px;
+  fill: $light-gray;
+  @extend %transition;
+}
+.item__link:hover,
+.item__link:focus,
+.item__link:hover use,
+.item__link:focus use {
+  color: $min-blu;
+  fill: $min-blu;
+}
+.item__logotipes:hover,
+.item__logotipes:focus {
+fill: $light-blu; 
+background-color: $one-color;
+}

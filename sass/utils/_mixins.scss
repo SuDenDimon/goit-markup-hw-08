@@ -1,0 +1,18 @@
+@mixin font ($fw, $fs, $lh){
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+@mixin display ($fl, $sb, $center) {
+  display: $fl;
+  justify-content: $sb;
+  align-items: $center;
+}
+@mixin butWids ($width) {
+  width: $width;
+  height: 38px;
+  border-radius: 4px;
+  background: $milk;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}

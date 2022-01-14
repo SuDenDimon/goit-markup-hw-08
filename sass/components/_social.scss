@@ -1,0 +1,28 @@
+.social {
+  @extend %position-center;
+  margin-bottom: 30px;
+}
+.social-link {
+  margin-right: 10px;
+  &:last-child {
+  margin-right: 0;
+  }
+  &__btn {
+  @extend %position-center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: $light-gray;
+  @extend %transition;
+  }
+  &__icon {
+  @extend %transition;
+  }
+  &__btn:hover,
+  &__btn:focus, 
+  &__icon:hover,
+  &__icon:focus {
+  background-color: $light-blu;
+  fill: $one-color;
+  }
+}

@@ -1,0 +1,37 @@
+.hero {
+  background-color: $dark;
+  padding: 200px 0;
+  max-width: 1600px;
+  margin: 0 auto;
+  border: 1px solid $min-white;
+  background-image: url(../images/Img.svg);  
+  // object-fit: contain;
+
+    &__title {
+    margin: 0 auto 30px;
+    max-width: 650px;
+    font-size: 44px;
+    line-height: 1.4;
+    color: $color;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+    &__button {
+    box-sizing: border-box;
+    padding: 10px 32px;
+    background: $light-blu;
+    box-shadow: 0px 4px 4px $light-black;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    color: $color;
+    background-color: $min-blu;
+  }
+}

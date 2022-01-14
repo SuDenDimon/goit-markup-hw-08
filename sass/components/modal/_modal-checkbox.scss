@@ -1,0 +1,48 @@
+.policy-box {
+  display: flex;
+  padding-left: 12px;
+  font-size: 14px;
+  color: $gray;
+}
+.policy-box a{
+  color: $light-blu;
+  display: flex;
+  align-items: center;
+}
+.policy-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.check-box-item {
+  padding-right: 7px;
+}
+.policy-checkbox:checked + .policy-box::before {
+  background-color: $light-blu;
+  background-image: url(../images/Vector-4.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.policy-checkbox:focus + .policy-box::before {
+  outline: 2px solid $light-blu;
+}
+.policy-box::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1px solid $main-black;
+  border-radius: 2px;
+}
+.policy-box a {
+  color: $min-blu;
+  text-decoration: underline;
+}
+.user-link {
+  margin-left: 7px;
+}
