@@ -11,6 +11,11 @@
   color: $color;
   background-color: $dark;
 }
+.address {
+  @media screen and (min-width: $mobile){
+    padding-top: 4px;
+ }
+}
 .communication {
   color: $visual-gray;
   background-color: $dark;

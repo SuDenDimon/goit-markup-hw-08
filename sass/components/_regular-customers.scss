@@ -1,5 +1,10 @@
 .list-customers {
   @extend %position-center;
+   @media screen and (min-width: $mobile){
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
   &__item {
   width: 170px;
   height: 92px;
@@ -7,14 +12,20 @@
   border: 1px solid $light-gray;
   border-radius: 4px;
   margin-right: 30px;
+   @media screen and (min-width: $mobile){
+    width: 210px; 
+    margin: 0 0 30px 0;
+  }
   }
   &__item:hover,
   &__item:focus { 
   border: 1px solid $light-blu;
   }
   &__item:last-child {
-  margin-right: 0;
-  }
+  @media screen and (min-width: $tablet){ 
+  margin-right: 0; 
+}
+}
 }
 .item__link {
   @extend %position-center;

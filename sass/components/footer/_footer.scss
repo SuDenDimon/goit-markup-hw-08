@@ -3,16 +3,28 @@
   background: $dark;
   max-width: 1600px;
   margin: 0 auto;
- }
+}
 .footer-container {
   display: flex;
   align-items: baseline;
+  @media screen and (min-width: $mobile){
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+ }
 }
 .footer-one {
   margin-left: 215px;
+  @media screen and (min-width: $mobile){
+    margin: 0;
+ }
 }
 .users {
   margin-left: 70px;
+   @media screen and (min-width: $mobile){
+    margin: 60px 0;
+ }
 }
 .klients {
    color: $one-color;
@@ -48,6 +60,9 @@
 }
 .sub-footer {
   margin-left: 130px;
+  @media screen and (min-width: $mobile){
+  margin: 0;
+ }
 }
 .sub-footer {
   color: $light-blu;
@@ -57,6 +72,11 @@
 }
 .form-sub {
   display: flex;
+  @media screen and (min-width: $mobile){
+  flex-direction: column;
+  justify-content: center;
+  
+ }
 }
 .footer-title {
   font-style: normal;
@@ -81,6 +101,10 @@
   line-height: 20px;
   letter-spacing: 0.03em;
   color: $color;
+  @media screen and (min-width: $mobile){
+  width: inherit;
+  margin-bottom: 20px;
+ }
 }
 .button-sub {
   @extend %position-center;
@@ -96,6 +120,9 @@
   border-radius: 4px;
   letter-spacing: 0.06em;
   color: $color;
+  @media screen and (min-width: $mobile){
+  margin: 0 auto;
+ }
 }
 .icon-telegram {
   padding-left: 10px;

@@ -4,8 +4,20 @@
   max-width: 1600px;
   margin: 0 auto;
   border: 1px solid $min-white;
-  background-image: url(../images/Img.svg);  
-  // object-fit: contain;
+  background-image: url(../images/Img.svg);
+  
+  @media screen and (min-width: $mobile){
+      width: $mobile;
+
+    }
+  @media screen and (min-width: $tablet){
+      width: $tablet;
+
+    }
+  @media screen and (min-width: $desktop){
+      width: $desktop;
+
+    }  
 
     &__title {
     margin: 0 auto 30px;

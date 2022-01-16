@@ -1,9 +1,23 @@
-.second-title {
+.section-mission {
+  padding: 94px 0;
+   @media screen and (min-width: $mobile){
+      margin: 0 auto;
+      display: none;
+    }
+  }
+.second-title, .second-title-two{
   @extend %position-center;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.7;
   margin-bottom: 50px;
+}
+.second-title {
+   @media screen and (min-width: $mobile){
+      width: $mobile;
+      display: none;
+      margin: 0;
+}
 }
 .mission-list {
   display: flex;
