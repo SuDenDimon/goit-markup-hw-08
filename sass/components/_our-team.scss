@@ -3,6 +3,9 @@
   padding: 94px 0;
   max-width: 1600px;
   margin: 0 auto;
+  @media screen and (min-width: $mobile){
+    padding: 60px 0 30px 0;
+  }
 }
 .list-team {
     display: flex;
@@ -15,7 +18,7 @@
     background-color: $one-color;
      @media screen and (min-width: $mobile){
       width: inherit;
-      margin: 0 auto;
+      margin: 0 0 30px 0;
     }
   }
     &__item-team:last-child {

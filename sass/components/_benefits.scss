@@ -1,7 +1,7 @@
 .section {
   padding: 94px 0;
    @media screen and (min-width: $mobile){
-      padding: 60px 0;
+      padding: 60px 0 30px 0;
       margin: 0 -15px;
     }
   &__hidden-elem {
