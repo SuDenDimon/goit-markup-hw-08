@@ -13,7 +13,7 @@
     padding: 16px 0;
     }
     @media screen and (min-width: $tablet){
-    padding: 26px 0 0 15px;
+    padding: 26px 0 0 0;
     }
 }
 .logo__text {
@@ -99,7 +99,6 @@
   @media screen and (min-width: $tablet){
     width: $tablet;
     padding: 5px 0;
-    margin-left: 84px;
 }
 }
 .contacts .contacts__item .contacts__links:hover,

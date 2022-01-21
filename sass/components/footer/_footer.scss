@@ -3,6 +3,10 @@
   background: $dark;
   max-width: 1600px;
   margin: 0 auto;
+  @media screen and (min-width: $tablet){
+    position: relative;
+    padding: 0 0 60px 0;
+ }
 }
 .footer-container {
   display: flex;
@@ -12,6 +16,8 @@
     flex-direction: column;
     text-align: center;
     padding: 0 15px;
+  @media screen and (min-width: $tablet){
+  }
  }
 }
 .footer-one {
@@ -19,11 +25,22 @@
   @media screen and (min-width: $mobile){
     margin: 0;
  }
+  @media screen and (min-width: $tablet){
+    padding: 60px 0 60px 76px;
+    width: max-content;
+    text-align: center;
+ }
 }
 .users {
   margin-left: 70px;
-   @media screen and (min-width: $mobile){
+  @media screen and (min-width: $mobile){
     margin: 60px 0;
+ }
+  @media screen and (min-width: $tablet){
+    position: absolute;
+    top: 65px;
+    left: 473px;
+    margin: 0 auto;
  }
 }
 .klients {
@@ -66,16 +83,25 @@
 }
 .sub-footer {
   color: $light-blu;
+  @media screen and (min-width: $tablet){
+    justify-content: center;
+  }
 }
 .div-sub-form {
   margin-top: 20px;
+  @media screen and (min-width: $tablet){
+    justify-content: center;
+  }
 }
 .form-sub {
   display: flex;
   @media screen and (min-width: $mobile){
   flex-direction: column;
-  justify-content: center;
-  
+  justify-content: center; 
+  @media screen and (min-width: $tablet){
+    width: 450px;
+    display: contents;
+  } 
  }
 }
 .footer-title {
@@ -86,6 +112,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $color;
+  @media screen and (min-width: $tablet){
+    text-align: center;
+  }
 }
 .input-sub {
   width: 358px;
