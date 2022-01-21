@@ -12,6 +12,9 @@
   @media screen and (min-width: $mobile){
     padding: 16px 0;
     }
+    @media screen and (min-width: $tablet){
+    padding: 26px 0 0 15px;
+    }
 }
 .logo__text {
   color: $one-color;
@@ -23,6 +26,9 @@
 }
 .nav-mobile {
   display: none;
+  @media screen and (min-width: $tablet){
+    display: flex; 
+}
 }
 .list-nav {
   font-style: normal;
@@ -30,12 +36,13 @@
   font-size: 14px;
   line-height: 1.14;
   color: $main-black;
+  @media screen and (min-width: $tablet){
+    width: $tablet;
+    display: flex;
+    max-width: fit-content;
+  }
   &:hover {
   color: $light-blu;
-  
-  @media screen and (min-width: $tablet){
-      display: flex;
-    }
   }
 }
 .list-nav__linok--border {
@@ -66,6 +73,9 @@
   display: flex;
   align-items: center;
   margin-right: 93px;
+  @media screen and (min-width: $tablet){
+    margin-right: 88px;
+    }
 }
 
 .contacts .contacts__item .contacts__links, 
@@ -86,6 +96,11 @@
   margin: 0 0 0 50px;
   color: $gray;
   font-weight: 500;
+  @media screen and (min-width: $tablet){
+    width: $tablet;
+    padding: 5px 0;
+    margin-left: 84px;
+}
 }
 .contacts .contacts__item .contacts__links:hover,
 .contacts .contacts__item .contacts__links:focus,
@@ -97,12 +112,18 @@ color: $light-blu;
 }
 .contacts {
   @extend %position-center;
-  align-items: baseline;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: $gray;
+    align-items: baseline;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $gray;
+  @media screen and (min-width: $tablet){
+    width: $tablet;
+    flex-direction: column;
+    max-width: fit-content;
+    align-items: baseline;
+}
 }
 .contacts:hover,
 .contacts:focus {
@@ -111,4 +132,9 @@ color: $light-blu;
 .contacts__icon {
   margin-right: 10px;
   fill: $gray;
+}
+.navigation {
+  @media screen and (min-width: $tablet){
+    width: $tablet;
+  }
 }

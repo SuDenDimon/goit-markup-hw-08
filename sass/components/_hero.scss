@@ -5,19 +5,25 @@
   margin: 0 auto;
   border: 1px solid $min-white;
   background-image: url(../images/Img.svg);
+  background-size: cover;
   
-  @media screen and (min-width: $mobile){
-      width: $mobile;
-
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/header_img@2x.jpg');
+  }
+  
+  @media screen and (min-width: $mobile){  
+    background-size: cover;
     }
-  @media screen and (min-width: $tablet){
-      width: $tablet;
+  // @media screen and (min-width: $tablet){
+  //     width: $tablet;
 
-    }
-  @media screen and (min-width: $desktop){
-      width: $desktop;
+  //   }
+  // @media screen and (min-width: $desktop){
+  //     width: $desktop;
 
-    }  
+  //   }  
 
     &__title {
     margin: 0 auto 30px;

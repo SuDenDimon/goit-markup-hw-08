@@ -29,13 +29,15 @@ button {
   margin: 0 auto;
 
   @media screen and (min-width: $mobile){
-      width: $mobile;
-      flex-wrap: wrap;
+    width: $mobile;
+    flex-wrap: wrap;
 
     }
   @media screen and (min-width: $tablet){
-      width: $tablet;
- 
+    width: $tablet;
+    display: flex;
+    flex-wrap: nowrap;
+    // padding: 0;
     }
 }
 
