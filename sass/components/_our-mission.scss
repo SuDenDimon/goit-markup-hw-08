@@ -4,6 +4,11 @@
       margin: 0 auto;
       display: none;
     }
+   @media screen and (min-width: $desktop){
+      display: block;
+      text-align: center;
+      padding: 0 0 94px 0;
+  }
   }
 .second-title, .second-title-two{
   @extend %position-center;
@@ -17,9 +22,16 @@
       width: $mobile;
       display: none;
       margin: 0;
-}
+   @media screen and (min-width: $desktop){
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 50px;
+    }
+  }
 }
 .mission-list {
+  width: 100%;
   display: flex;
   justify-content: space-between; 
   &__item {

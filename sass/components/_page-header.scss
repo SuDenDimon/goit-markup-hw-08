@@ -11,10 +11,10 @@
   color: $light-blu;
   @media screen and (min-width: $mobile){
     padding: 16px 0;
-    }
-    @media screen and (min-width: $tablet){
+  }
+  @media screen and (min-width: $tablet){
     padding: 26px 0 0 0;
-    }
+  }
 }
 .logo__text {
   color: $one-color;
@@ -27,8 +27,12 @@
 .nav-mobile {
   display: none;
   @media screen and (min-width: $tablet){
-    display: flex; 
-}
+    width: $tablet;
+    display: flex;
+  }
+  @media screen and (min-width: $desktop){
+    min-width: $desktop;
+  }
 }
 .list-nav {
   font-style: normal;
@@ -68,7 +72,6 @@
   border-radius: 2px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .header .logo {
   display: flex;
   align-items: center;
@@ -77,7 +80,6 @@
     margin-right: 88px;
     }
 }
-
 .contacts .contacts__item .contacts__links, 
 .list-nav .list-nav__link .list-nav__linok {
   margin-right: 50px;
@@ -99,7 +101,12 @@
   @media screen and (min-width: $tablet){
     width: $tablet;
     padding: 5px 0;
-}
+  }
+  @media screen and (min-width: $desktop){
+
+    padding: 0;
+    width: max-content;
+  }
 }
 .contacts .contacts__item .contacts__links:hover,
 .contacts .contacts__item .contacts__links:focus,
@@ -107,7 +114,7 @@
 .list-nav .list-nav__link .list-nav__linok--border:focus,
 .list-nav .list-nav__link .list-nav__linok:hover, 
 .list-nav .list-nav__link .list-nav__linok:focus {
-color: $light-blu; 
+  color: $light-blu; 
 }
 .contacts {
   @extend %position-center;
@@ -122,7 +129,12 @@ color: $light-blu;
     flex-direction: column;
     max-width: fit-content;
     align-items: baseline;
-}
+  }
+  @media screen and (min-width: $desktop){
+    display: flex;
+    flex-direction: row;
+    margin: 32px 0 32px 305px;
+  }
 }
 .contacts:hover,
 .contacts:focus {
@@ -136,4 +148,7 @@ color: $light-blu;
   @media screen and (min-width: $tablet){
     width: $tablet;
   }
+  @media screen and (min-width: $desktop){
+    width: $desktop;
+   }
 }

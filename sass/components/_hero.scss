@@ -12,19 +12,12 @@
   (min-resolution: 2dppx) {
     background-image: url('../images/header_img@2x.jpg');
   }
-  
   @media screen and (min-width: $mobile){  
     background-size: cover;
     }
-  // @media screen and (min-width: $tablet){
-  //     width: $tablet;
-
-  //   }
-  // @media screen and (min-width: $desktop){
-  //     width: $desktop;
-
-  //   }  
-
+  @media screen and (min-width: $desktop){
+    background-size: 1600pxv auto;
+    }
     &__title {
     margin: 0 auto 30px;
     max-width: 650px;

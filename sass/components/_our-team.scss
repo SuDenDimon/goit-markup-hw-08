@@ -6,6 +6,9 @@
   @media screen and (min-width: $mobile){
     padding: 60px 0 30px 0;
   }
+   @media screen and (min-width: $desktop){
+     padding: 94px 0;
+   }
 }
 .list-team {
     display: flex;
@@ -16,6 +19,9 @@
       flex-wrap: wrap;
       margin: -15px;
       justify-content: flex-start;
+    }
+    @media screen and (min-width: $desktop){
+      flex-wrap: nowrap;
     }
     &__item-team { 
     margin-right: 30px;  
@@ -44,7 +50,6 @@
 }
    @media screen and (min-width: $mobile){
       flex-direction: column;
-      // margin: 0 auto;
     }
     @media screen and (min-width: $tablet){ 
     flex-direction: row;      

@@ -31,14 +31,16 @@ button {
   @media screen and (min-width: $mobile){
     width: $mobile;
     flex-wrap: wrap;
-
-    }
+  }
   @media screen and (min-width: $tablet){
     width: $tablet;
     display: flex;
     flex-wrap: nowrap;
-    // padding: 0;
-    }
+  }
+   @media screen and (min-width: $desktop){
+    min-width: 1200px;
+    padding: 0;
+   }
 }
 
     // @media screen and (min-width: $mobile){
