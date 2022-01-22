@@ -38,9 +38,9 @@ button {
     flex-wrap: nowrap;
   }
    @media screen and (min-width: $desktop){
-    min-width: 1200px;
+    min-width: $desktop;
     padding: 0;
-   }
+  }
 }
 
     // @media screen and (min-width: $mobile){
