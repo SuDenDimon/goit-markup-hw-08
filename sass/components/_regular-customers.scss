@@ -30,11 +30,6 @@
   &__item:focus { 
   border: 1px solid $light-blu;
   }
-  &__item:last-child {
-  @media screen and (min-width: $tablet){ 
-  margin-right: 0; 
-}
-}
 }
 .item__link {
   @extend %position-center;
