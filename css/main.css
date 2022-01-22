@@ -1259,6 +1259,12 @@ body {
           border-radius: 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+
 .button-modal {
   position: absolute;
   border: 1px solid #2f303a;
