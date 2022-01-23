@@ -964,6 +964,13 @@ body {
           align-items: baseline;
 }
 
+@media screen and (min-width: 0px) {
+  .footer-container {
+    max-width: 767px;
+    display: block;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .footer-container {
     display: block;
