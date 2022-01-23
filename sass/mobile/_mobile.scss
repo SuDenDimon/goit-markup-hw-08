@@ -37,7 +37,7 @@ button {
   }
   @media screen and (min-width: $tablet){
     width: $tablet;
-    display: flex;
+    display: block;
     flex-wrap: nowrap;
   }
    @media screen and (min-width: $desktop){
