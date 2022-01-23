@@ -31,6 +31,9 @@ button {
   @media screen and (min-width: $mobile){
     width: $mobile;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   @media screen and (min-width: $tablet){
     width: $tablet;

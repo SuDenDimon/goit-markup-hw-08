@@ -73,6 +73,18 @@ button {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -334,15 +346,16 @@ body {
   fill: #757575;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .navigation {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .navigation {
-    width: 1200px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -355,14 +368,6 @@ body {
   padding: 0;
   border: none;
   background-color: transparent;
-}
-
-@media screen and (min-width: 480px) {
-  .menu-button {
-    position: absolute;
-    top: 10px;
-    left: 430px;
-  }
 }
 
 .menu-button .icon-menu {
