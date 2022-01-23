@@ -17,11 +17,10 @@
   <div class="container">
     <nav class="navigation">
       <a href="./index.html" class="logo">Web<span class="logo__text--black">Studio</span></a>
-      </nav> 
       <div class="nav-mobile">
         <ul class="list-nav naigation__list-nav">
-          <li class="list-nav__link"><a href="./index.html" class="list-nav__linok">Студия</a></li>
-          <li class="list-nav__link"><a href="./portfolio.html" class="list-nav__linok--border">Портфолио</a></li>
+          <li class="list-nav__link"><a href="./index.html" class="list-nav__linok--border">Студия</a></li>
+          <li class="list-nav__link"><a href="./portfolio.html" class="list-nav__linok">Портфолио</a></li>
           <li class="list-nav__link"><a href="" class="list-nav__linok">Контакты</a></li>
         </ul>
         <ul class="contacts">
@@ -44,6 +43,23 @@
         </li>
         </ul>
       </div>
+    </nav>
+    <button type="button" 
+        class="menu-button is-open" 
+        aria-expanded="false"
+        aria-controls="menu-container" 
+        data-menu-button>
+        <svg 
+          width="40px" 
+          height="40px"
+          aria-label="Переключатель мобильного меню">
+          <use class="icon-close" href="./images/symbol-defs 1.svg#icon-close_40px-2"></use>
+          <use class="icon-menu" href="./images/symbol-defs 1.svg#icon-menu_40px-2"></use>
+        </svg>
+      </button>
+      <div class="menu-container" data-menu>
+        контент меню
+      </div> 
   </div>
 </header>
 
