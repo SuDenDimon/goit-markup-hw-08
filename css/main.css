@@ -259,7 +259,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .contacts .contacts__item .contacts__links {
-    width: 768px;
     padding: 5px 0;
   }
 }
