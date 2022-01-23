@@ -8,4 +8,7 @@
   line-height: 30px;
   background: $min-blu;
   padding: 10px 55px;
+  @media screen and (min-width: $mobile){
+    margin-bottom: 50px;
+  }
 }

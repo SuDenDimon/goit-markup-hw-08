@@ -3,6 +3,13 @@
   padding-left: 12px;
   font-size: 14px;
   color: $gray;
+  @media screen and (min-width: $mobile){
+    width: 100%;
+    padding-left: 0;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    align-items: end;
+  }
 }
 .policy-box a{
   color: $light-blu;
@@ -21,6 +28,9 @@
 }
 .check-box-item {
   padding-right: 7px;
+  @media screen and (min-width: $mobile){
+    padding: 0;
+  }
 }
 .policy-checkbox:checked + .policy-box::before {
   background-color: $light-blu;

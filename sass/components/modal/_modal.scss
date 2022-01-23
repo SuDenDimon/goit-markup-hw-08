@@ -24,6 +24,7 @@
   border-radius: 4px;
   @media screen and (min-width: $mobile){
     min-width: 450px;
+    left: 48%;
   }
 }
 .button-modal {
@@ -57,4 +58,7 @@
   line-height: 23px;
   letter-spacing: 0.03em;
   color: $main-black;
+  @media screen and (min-width: $mobile){
+    text-align: center;
+  }
 }
