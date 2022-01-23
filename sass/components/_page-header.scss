@@ -88,14 +88,40 @@
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  }
+.list-nav .list-nav__link .list-nav__linok {
+  @media screen and (min-width: $mobile){
+    padding: 16px 0;
+  }
+}
+.contacts .contacts__item:first-child .contacts__links {
+  @media screen and (min-width: $mobile){
+  font-size: 34px;
+  line-height: 40px;
+  color: #2196F3;
+  }
+}
+.contacts .contacts__item:last-child .contacts__links {
+  @media screen and (min-width: $mobile){
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 64px;;
+  }
 }
 .list-nav .list-nav__link:last-child .list-nav__linok {
   margin-right: 0;
+}
+.contacts {
+  margin-top: 286px;
 }
 .contacts .contacts__item .contacts__links {
   margin: 0 0 0 50px;
   color: $gray;
   font-weight: 500;
+  @media screen and (min-width: $mobile){
+    margin: 0;
+    padding: 0;
+  }
   @media screen and (min-width: $tablet){
     padding: 5px 0;
   }
@@ -104,6 +130,12 @@
     width: max-content;
   }
 }
+ @media screen and (min-width: $mobile){
+    .contacts__item {
+      padding-bottom: 32px;
+  } 
+}
+
 .contacts .contacts__item .contacts__links:hover,
 .contacts .contacts__item .contacts__links:focus,
 .list-nav .list-nav__link .list-nav__linok--border:hover,
@@ -120,6 +152,11 @@
     font-size: 14px;
     line-height: 1.14;
     color: $gray;
+    
+  @media screen and (min-width: $mobile){
+    max-width: 767px;
+    flex-direction: column;
+  }  
   @media screen and (min-width: $tablet){
     width: $tablet;
     flex-direction: column;
@@ -151,6 +188,7 @@
   margin: 0;
   padding: 0;
   border: none;
+  z-index: 999;
   background-color: transparent;
   @media screen and (min-width: $tablet){
     width: $tablet;
@@ -165,21 +203,4 @@
 }
 .menu-button.is-open .icon-close {
   display: none;
-}
-
-.menu-container {
-  display: none;
-
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  left: 0;
-  background-color: palegoldenrod;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-
-  &.is-open {
-    display: block;
-  }
 }
