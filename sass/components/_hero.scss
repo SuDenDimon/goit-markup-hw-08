@@ -16,7 +16,7 @@
     background-size: cover;
     }
   @media screen and (min-width: $desktop){
-    background-size: 1600pxv auto;
+    background-size: 1600px auto;
     }
     &__title {
     margin: 0 auto 30px;
@@ -27,6 +27,10 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @media screen and (min-width: $mobile) and (max-width: 1199px){
+      font-size: 26px;
+      max-width: 360px; 
+    }
   }
     &__button {
     box-sizing: border-box;

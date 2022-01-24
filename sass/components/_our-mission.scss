@@ -16,7 +16,11 @@
   font-size: 36px;
   line-height: 1.7;
   margin-bottom: 50px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px){
+    font-size: 28px;
+  }
 }
+
 .second-title {
    @media screen and (min-width: $mobile){
       width: $mobile;
