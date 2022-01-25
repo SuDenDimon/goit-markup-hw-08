@@ -232,6 +232,10 @@ body {
   }
 }
 
+.contacts li a {
+  color: #757575;
+}
+
 .list-nav__link:not(:last-child) {
   margin-right: 50px;
 }

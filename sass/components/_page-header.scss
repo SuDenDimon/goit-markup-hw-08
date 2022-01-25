@@ -74,7 +74,6 @@
 .contacts__links,
 .list-nav__linok {
   display: inline-block;
-
   color: var(--main-color);
   font-weight: 500;
   font-size: 14px;
@@ -84,7 +83,9 @@
     padding: 30.4px 0;
   }
 }
-
+.contacts li a {
+  color: $gray;
+}
 .list-nav__link:not(:last-child) {
   margin-right: 50px;
 }
