@@ -2,7 +2,6 @@
 @import './utils/placeholders';
 @import './utils/breakpoints';
 @import './utils/mixins';
-@import './mobile/mobile';
 @import './base/common';
 @import './components/page-header';
 @import './components/hero';
@@ -17,4 +16,5 @@
 @import './components/modal/modal-checkbox';
 @import './components/modal/modal-button';
 @import './components/portfolio/portfolio';
+@import './mobile/mobile';
 @import './mobile/menu-mobile';
