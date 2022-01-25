@@ -1,5 +1,4 @@
-.menu-container {
-  
+.menu-container { 
   display: none;
   position: fixed;
   top: 0;
@@ -11,11 +10,16 @@
   font-size: 20px; 
   &.is-open {
     display: block;
+  @media screen and (min-width: $tablet){
+    display: none;
+    }  
   }
 }
 .menu-navigation {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-top: 6px;
     text-align: left;
+  }
 }
 .menu-navigation .list-nav .list-nav__link .list-nav__linok { 
     max-width: 767px;
@@ -26,6 +30,48 @@
     line-height: 47px;
     letter-spacing: 0.02em;
 }
+.menu-navigation .list-nav {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      display: block;
+    }
+} 
+.menu-contacts .contacts {
+    display: block;
+    text-align: start;
+    margin-top: 306px;
+}
+.menu-navigation .list-nav .list-nav__link .list-nav__linok {
+  @media screen and (min-width: $mobile) {
+    padding: 16px 0;
+  }
+}
+.menu-navigation .list-nav .list-nav__link:last-child .list-nav__linok {
+  @media screen and (min-width: $mobile) {
+    padding-bottom: 0;
+  }
+}
+.menu-contacts .contacts .contacts__item:first-child .contacts__links {
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 32px;
+    font-size: 34px;
+    line-height: 40px;
+    color: #2196f3;
+  }
+}
+.menu-contacts .contacts .contacts__item:last-child .contacts__links {
+  @media screen and (min-width: $mobile) {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 64px;
+  }
+}
+
+
+
+
+
+
+
 .page-header__networks {
   display: flex;
   justify-content: start;

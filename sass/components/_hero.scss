@@ -4,20 +4,25 @@
   max-width: 1600px;
   margin: 0 auto;
   border: 1px solid $min-white;
-  background-image: url(../images/Img.svg);
+  @media screen and (min-width: 320px){
+  background-image: url(../images/header_mobile@1x.jpg);
   background-size: cover;
-  
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url('../images/header_img@2x.jpg');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/header_mobile@2x.jpg);
   }
-  @media screen and (min-width: $mobile){  
-    background-size: cover;
-    }
+}
+  @media screen and (min-width: $tablet){
+    background-image: url(../images/Header_tablet_img@1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/Header_tablet_img@2x.jpg);
+  }    
   @media screen and (min-width: $desktop){
-    background-size: 1600px auto;
-    }
+    background-image: url(../images/Header_desctop_img@1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/Header_desctop_img@2x.jpg);
+  }    
+ }
+}   
     &__title {
     margin: 0 auto 30px;
     max-width: 650px;

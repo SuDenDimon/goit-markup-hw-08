@@ -22,7 +22,6 @@
   display: inline-block;
   margin-right: 5px;
 }
-
 .list-nav {
   display: none;
   font-style: normal;
@@ -40,7 +39,6 @@
 .list-nav__linok {
   padding: 30.4px 0;
 }
-
 .list-nav__linok--border {
   position: relative;
   display: inline-block;
@@ -70,7 +68,6 @@
     margin-right: 93px;
   }
 }
-
 .contacts__links,
 .list-nav__linok {
   display: inline-block;
@@ -92,26 +89,6 @@
 .contacts__item:not(:last-child) {
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
-  }
-}
-
-.menu-navigation .list-nav .list-nav__link .list-nav__linok {
-  @media screen and (min-width: $mobile) {
-    padding: 16px 0;
-  }
-}
-.menu-contacts .contacts .contacts__item:first-child .contacts__links {
-  @media screen and (min-width: $mobile) {
-    font-size: 34px;
-    line-height: 40px;
-    color: #2196f3;
-  }
-}
-.menu-contacts .contacts .contacts__item:last-child .contacts__links {
-  @media screen and (min-width: $mobile) {
-    font-size: 24px;
-    line-height: 28px;
-    padding-bottom: 64px;
   }
 }
 .list-nav .list-nav__link:last-child .list-nav__linok {

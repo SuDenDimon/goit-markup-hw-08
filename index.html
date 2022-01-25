@@ -57,7 +57,7 @@
       </button>
     </nav>
  
-      <div class="menu-container" data-menu>
+      <div class="menu-container" id="menu-container" data-menu>
         <div class="menu-navigation">
           <ul class="list-nav naigation__list-nav">
           <li class="list-nav__link"><a href="./index.html" class="list-nav__linok">Студия</a></li>
@@ -203,8 +203,13 @@
     <div class="container">
       <ul class="list-team">
         <li class="item-team list-team__item-team">
-          <img src="./images/img(6).jpg" alt="дизайнер продукта" width="270" height="260"/>
-            <h3 class="item-team__name">Игорь Демьяненко<h3>
+          <picture>
+            <source srcset="./images/gallary_desktop@1x.jpg 1x, ./images/gallary_desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+            <source srcset="./images/gallary_tablet@1x.jpg 1x, ./images/gallary_tablet@2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./images/gallary_mobile@1x.jpg 1x, ./images/gallary_mobile@2x.jpg 2x" media="(min-width: 320px)" />
+            <img src="./images/img(6).jpg" alt="продакт менеджер"/>
+          </picture>  
+          <h3 class="item-team__name">Игорь Демьяненко<h3>
             <p class="item-team__prof">Product Designer<p>
               <ul class="social">
                 <li class="social-link">
@@ -242,9 +247,13 @@
               </ul>  
         </li>
         <li class="item-team list-team__item-team">
-          <img
-            src="./images/img(7).jpg" alt="фронтенд разработчик" width="270" height="260"/>
-          <h3 class="item-team__name">Ольга Репина</h3>
+          <picture>
+            <source srcset="./images/gallary_olga_desktop@1x.jpg 1x, ./images/gallary_olga_desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+            <source srcset="./images/gallary_olga_tablet@1x.jpg 1x, ./images/gallary_olga_tablet@2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./images/gallary_olga_mobile@1x.jpg 1x, ./images/gallary_olga_mobile@2x.jpg 2x" media="(min-width: 320px)" />
+            <img src="./images/img(7).jpg" alt="фронтенд разработчик"/>
+          </picture> 
+            <h3 class="item-team__name">Ольга Репина</h3>
           <p class="item-team__prof">Frontend Developer</p>
           <ul class="social">
                 <li class="social-link">
@@ -282,8 +291,13 @@
               </ul>  
         </li>
         <li class="item-team list-team__item-team">
-          <img src="./images/img(8).jpg" alt="маркетолог" width="270" height="260"/>
-          <h3 class="item-team__name">Николай Тарасов</h3>
+          <picture>
+            <source srcset="./images/gallary_nik_desktop@1x.jpg 1x, ./images/gallary_nik_desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+            <source srcset="./images/gallary_nik_tablet@1x.jpg 1x, ./images/gallary_nik_tablet@2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./images/gallary_nik_mobile@1x.jpg 1x, ./images/gallary_nik_mobile@2x.jpg 2x" media="(min-width: 320px)" />
+            <img src="./images/img(8).jpg" alt="маркетолог"/>
+          </picture>
+            <h3 class="item-team__name">Николай Тарасов</h3>
           <p class="item-team__prof">Marketing</p>
           <ul class="social">
                 <li class="social-link">
@@ -321,7 +335,12 @@
               </ul>  
         </li>
         <li class="item-team list-team__item-team">
-          <img src="./images/img(9).jpg" alt="Дизайнер пользовательского интерфейса" width="270" height="260"/>
+          <picture>
+            <source srcset="./images/gallary_mih_desktop@1x.jpg 1x, ./images/gallary_mih_desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+            <source srcset="./images/gallary_mih_tablet@1x.jpg 1x, ./images/gallary_mih_tablet@2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./images/gallary_mih_mobile@1x.jpg 1x, ./images/gallary_mih_mobile@2x.jpg 2x" media="(min-width: 320px)" />
+            <img src="./images/img(9).jpg" alt="Дизайнер пользовательского интерфейса"/>
+          </picture>
           <h3 class="item-team__name">Михаил Ермаков</h3>
           <p class="item-team__prof">UI Designer</p>
           <ul class="social">
